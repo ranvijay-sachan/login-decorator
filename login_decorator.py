@@ -58,7 +58,7 @@ def secured_ping():
     return "All good. You only get this message if you're authenticated"
 
 
-# run it on different post
+# run it on different port
 @app.route("/check/token", methods=["POST"])
 def validate_token():
     tokens = ['12345', 'Bearer 1234567']
